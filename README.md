@@ -55,7 +55,7 @@
 <pre><code>-search_global</code></pre>
 
 <p>
-  For USEARCH 12, this may need to be changed to:
+  For USEARCH 12, this needs to be changed to:
 </p>
 
 <pre><code>-usearch_global</code></pre>
