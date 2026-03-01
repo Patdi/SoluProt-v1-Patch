@@ -262,12 +262,12 @@ class Predictor:
             physico_chem.loc[index] = pc_row
         self._join(physico_chem, Predictor._PRE_PHYSICO_CHEM)
 
-    def _add_usearch_identity(self, b6="identity.b6"):
+   def _add_usearch_identity(self, b6="identity.b6"):
         """Identity"""
         print("Computing identity")
         b6_path = self.file_path(b6)
         check_remove_file(b6_path)
-        usearch_arguments = ['-search_global', self.fasta_path,
+        usearch_arguments = ['-usearch_global', self.fasta_path,
                              '-db', self.pdb_db, '-id', '0.0', '-blast6out',
                              b6_path, '-threads', str(self.usearch_threads),
                              '-top_hits_only']
